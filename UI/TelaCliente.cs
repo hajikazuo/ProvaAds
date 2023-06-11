@@ -17,6 +17,7 @@ namespace ProvaAds
         {
             InitializeComponent();
         }
+
         Cliente cli;
 
         private void TelaCliente_Load(object sender, EventArgs e)

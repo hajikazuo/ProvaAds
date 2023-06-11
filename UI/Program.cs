@@ -16,7 +16,7 @@ namespace ProvaAds
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaCliente());
+            Application.Run(new Menu());
         }
     }
 }

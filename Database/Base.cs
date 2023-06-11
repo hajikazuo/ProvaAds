@@ -213,8 +213,8 @@ namespace Database
                         {
                             info.SetValue(obj, reader[info.Name]);
                         }
-                        lista.Add(obj);
                     }
+                    lista.Add(obj);
                 }
                 mySql.Connection.Close();
             }
