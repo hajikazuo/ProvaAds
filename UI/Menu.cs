@@ -48,7 +48,15 @@ namespace ProvaAds
 
         private void btnPedidos_Click(object sender, EventArgs e)
         {
-
+            tela?.Close();
+            tela = new TelaPedido
+            {
+                TopLevel = false,
+                Dock = DockStyle.Fill,
+                FormBorderStyle = FormBorderStyle.None,
+            };
+            pnTela.Controls.Add(tela);
+            tela.Show();
         }
     }
 }

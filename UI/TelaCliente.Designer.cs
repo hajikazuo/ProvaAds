@@ -41,12 +41,12 @@
             this.btnExcluir = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvDados = new System.Windows.Forms.DataGridView();
-            this.txtEndereco = new System.Windows.Forms.TextBox();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Celular = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +59,7 @@
             this.label1.Size = new System.Drawing.Size(26, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtId
             // 
@@ -67,6 +68,7 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(49, 24);
             this.txtId.TabIndex = 1;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // txtNome
             // 
@@ -75,6 +77,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(386, 24);
             this.txtNome.TabIndex = 3;
+            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // label2
             // 
@@ -85,6 +88,7 @@
             this.label2.Size = new System.Drawing.Size(53, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nome:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -95,6 +99,7 @@
             this.label3.Size = new System.Drawing.Size(42, 18);
             this.label3.TabIndex = 6;
             this.label3.Text = "CPF:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -105,6 +110,7 @@
             this.label4.Size = new System.Drawing.Size(58, 18);
             this.label4.TabIndex = 4;
             this.label4.Text = "Celular:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtCelular
             // 
@@ -114,6 +120,7 @@
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(177, 24);
             this.txtCelular.TabIndex = 8;
+            this.txtCelular.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtCelular_MaskInputRejected);
             // 
             // txtCpf
             // 
@@ -123,6 +130,7 @@
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(177, 24);
             this.txtCpf.TabIndex = 9;
+            this.txtCpf.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtCpf_MaskInputRejected);
             // 
             // btnPesquisar
             // 
@@ -166,6 +174,7 @@
             this.label5.Size = new System.Drawing.Size(76, 18);
             this.label5.TabIndex = 13;
             this.label5.Text = "Endereço:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // dgvDados
             // 
@@ -180,14 +189,7 @@
             this.dgvDados.Name = "dgvDados";
             this.dgvDados.Size = new System.Drawing.Size(776, 151);
             this.dgvDados.TabIndex = 15;
-            // 
-            // txtEndereco
-            // 
-            this.txtEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEndereco.Location = new System.Drawing.Point(88, 198);
-            this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(386, 24);
-            this.txtEndereco.TabIndex = 16;
+            this.dgvDados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDados_CellContentClick);
             // 
             // Id
             // 
@@ -218,6 +220,15 @@
             this.Endereco.DataPropertyName = "Endereco";
             this.Endereco.HeaderText = "Endereco";
             this.Endereco.Name = "Endereco";
+            // 
+            // txtEndereco
+            // 
+            this.txtEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEndereco.Location = new System.Drawing.Point(88, 198);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(386, 24);
+            this.txtEndereco.TabIndex = 16;
+            this.txtEndereco.TextChanged += new System.EventHandler(this.txtEndereco_TextChanged);
             // 
             // TelaCliente
             // 

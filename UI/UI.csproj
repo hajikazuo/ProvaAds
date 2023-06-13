@@ -72,6 +72,12 @@
     <Compile Include="TelaFlor.Designer.cs">
       <DependentUpon>TelaFlor.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaPedido.Designer.cs">
+      <DependentUpon>TelaPedido.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaFlor.resx">
       <DependentUpon>TelaFlor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaPedido.resx">
+      <DependentUpon>TelaPedido.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

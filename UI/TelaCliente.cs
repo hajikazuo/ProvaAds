@@ -85,5 +85,60 @@ namespace ProvaAds
             txtCpf.Text = null;
             txtEndereco.Text = null;
         }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCelular_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void txtCpf_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvDados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtEndereco_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
